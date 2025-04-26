@@ -1,0 +1,55 @@
+{% load static %}
+{% load bootstrap4 %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link type="text/css" href="{% static 'main/css/style.css' %}" rel="stylesheet" />
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+<body>
+    <header>
+        <div class="main">
+            <img class="logo" src="{% static 'main/images/logo.png' %}">
+            <h1>ALLWAYS</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a>Статистика</a></li>
+                <Li><a href="{% url 'maps' %}">Maps</a></Li>
+                <li><a>Узнать больше</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+            <button class="prev"><</button>
+     <div class="slider">
+        <div class="slider-liner">
+        <img src="{% static 'main/images/nature.jpeg' %}">
+        <img src="{% static 'main/images/lake.jpeg' %}">
+        <img src="325570-blackangel.jpg">
+        </div>
+     </div>
+
+    <button class="next">></button>
+
+     </div>
+
+
+    <footer>
+        <H1>ACEV</H1>
+    </footer>
+
+<script src="{% static 'main/js/main.js' %}"></script>
+</body>
+</html>
