@@ -36,9 +36,9 @@ header{
     z-index: 1;
     position: relative;
     top: 15%;
-    left: 25%;
-    width: 50%;
-    height: 400px;
+
+    width: 100%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,18 +47,19 @@ header{
 
   #map {
     width: 100%;
-    height: 600px;
+    height:460px;
     border: 2px solid black;
     border-radius: 8px;
-
+    margin:0px;
+box-shadow: 2px 3px 2px 3px rgba(0, 0, 0, 0.285);
   }
 
   select.form-select{
-    z-index: 2;
+   z-index: 2;
    position: absolute;
    width: 12%;
-   top:22%;
-   left: 59%;
+   top:24%;
+   left: 80%;
    box-shadow: 2px 3px 2px 3px rgba(0, 0, 0, 0.285);
 
   }

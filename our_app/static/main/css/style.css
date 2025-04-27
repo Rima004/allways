@@ -1,104 +1,68 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-}
-
-li,a,div{
-
+* {
     font-family: Oswald;
-    font-weight: 6;
-    font-size: 16px;
-    text-decoration: none;
-    cursor: pointer;
-}
+  }
 
-main{
-    display: flex;
-    align-items: center;
-
-}
-.main h1{
-    transition: all 2s;
-
-}
+  ul, li {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
 
 
-ul{
-   list-style: none;
-}
-.logo,h1{
-
+  .logo {
     width: 60px;
-    display: inline-block;
-}
+    margin: 0;
+  }
+  .slider  {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-top:30px ;
+  }
 
-
-header{
-    z-index: 1;
-    display: flex;
-    justify-content:start;
-    align-items: center;
-    gap:25px;
-    padding: 15px;
-    background-color:rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    position: sticky;
-    top: 0;
-}
-
- ul li {
-
-    z-index: 2;
-    display: inline-block;
-    margin-left: 15px;
-    transition: all 2s;
-    font-weight: bold;
-
-}
-
-ul li a{
-    transition:all 1s;
-    cursor: pointer;
-
-}
-ul li a:hover{
-    color: rgb(109, 18, 61);
-
-
-}
-
-.main h1:hover{
-    color: rgb(109, 18, 61);
-}
-
-
-.container{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(255, 255, 255);
+  .slider img {
     width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  header {
+    background-color: black;
+    color: white;
     padding: 10px;
+  }
 
+  .menu__item {
+    margin-left: 20px;
+  }
+
+  .menu__item a {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .slick-prev, .slick-next {
+    width: 40px;
+    height: 40px;
+    z-index: 10;
 }
 
-.slider{
 
-    width: 700px;
-
-    border: 3px solid black;
-    overflow: hidden;
+.slick-prev:before, .slick-next:before {
+    font-size: 30px;
+    color: black;
+    opacity: 0.75;
 }
 
-img{
-    width: 700px;
 
-
+.slick-prev {
+    left: -50px;
 }
-.slider-liner{
-    display: flex;
+
+.slick-next {
+    right: -50px;
+}
+
+.slider {
     position: relative;
-    left:0;
-    transition: all 1s;
-
+    top:10%;
 }
-
