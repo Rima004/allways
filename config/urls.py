@@ -23,7 +23,7 @@ from django.urls import path
 from apps.main.views import main_view, maps_view
 
 urlpatterns = [
-    path("", main_view),
+    path("", main_view, name="main"),
     path("admin/", admin.site.urls),
     path("maps/", maps_view, name="maps"),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
