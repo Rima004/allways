@@ -38,3 +38,9 @@ a:active {
     display: inline;
     cursor: pointer;
 }
+
+ul.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
