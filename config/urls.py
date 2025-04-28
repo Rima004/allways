@@ -20,10 +20,11 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 
-from apps.main.views import main_view, maps_view
+from apps.main.views import main_view, maps_view, statistics_view
 
 urlpatterns = [
     path("", main_view, name="main"),
     path("admin/", admin.site.urls),
     path("maps/", maps_view, name="maps"),
+    path("statistics/",statistics_view, name="statistics")
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

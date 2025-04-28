@@ -1,0 +1,73 @@
+* {
+    font-family: Oswald;
+  }
+
+  ul, li {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Специально для логотипа */
+  .logo {
+    width: 60px;
+    margin: 0;
+  }
+  .slider  {
+    width: 60%;
+    height: auto;
+    display: block;
+  }
+
+  .slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  header {
+    z-index: 2;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+  }
+
+  .menu__item {
+    margin-left: 20px;
+  }
+
+  .menu__item a {
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+
+.static{
+     z-index: 1;
+    position: relative;
+    left:10%;
+    padding: 50px;
+}
+.inform{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+
+   margin-top: 20px;
+   background-color: rgba(10, 10, 21, 0.03);
+   box-shadow:
+       0 4px 8px rgba(0, 0, 0, 0.15),
+       0 -4px 8px rgba(0, 0, 0, 0.10);
+   border-radius: 15px;
+   position: relative;
+    left:10%;
+
+}
+
+
+

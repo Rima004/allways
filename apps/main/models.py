@@ -9,3 +9,11 @@ class Places(models.Model):
 
     def __str__(self):
         return self.category
+
+
+class Statistics(models.Model):
+    year = models.IntegerField('Year')
+    number_of_people = models.FloatField('Number of people (thousands)')
+
+    def __str__(self):
+        return f"{self.year}: {self.number_of_people}k people"

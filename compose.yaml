@@ -1,0 +1,11 @@
+services:
+  allays_django:
+    build:
+      dockerfile: deployment/docker/Dockerfile
+      context: .
+    image: allays_django
+    container_name: allays_django
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./db.sqlite3:/usr/app/db.sqlite3
