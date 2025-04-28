@@ -1,0 +1,2020 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-28 12:53+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
+"2:1));\n"
+
+#: apps/main/models.py:11
+msgid "Name"
+msgstr "Nume"
+
+#: apps/main/models.py:13
+#, fuzzy
+#| msgid "Category of the place (e.g., restaurant, park, shop)."
+msgid "The official name of the place (e.g., Central Park, Joe's Diner)."
+msgstr "Categoria locului (e.g. restaurant, parc, centru comercial)"
+
+#: apps/main/models.py:18
+msgid "Category"
+msgstr "Categorie"
+
+#: apps/main/models.py:19
+#, fuzzy
+#| msgid "Category of the place (e.g., restaurant, park, shop)."
+msgid "The type of place, such as restaurant, park, shop, etc."
+msgstr "Categoria locului (e.g. restaurant, parc, centru comercial)"
+
+#: apps/main/models.py:22
+msgid "Latitude"
+msgstr "Latitudine"
+
+#: apps/main/models.py:23
+msgid "The geographical latitude coordinate of the place."
+msgstr "Coordonata geografică de latitudine a locului."
+
+#: apps/main/models.py:26
+msgid "Longitude"
+msgstr "Longitudine"
+
+#: apps/main/models.py:27
+msgid "The geographical longitude coordinate of the place."
+msgstr "Coordonata geografică de longitudine a locului."
+
+#: apps/main/models.py:31
+msgid "Place"
+msgstr "Locație"
+
+#: apps/main/models.py:32 config/settings.py:178
+msgid "Places"
+msgstr "Locuri"
+
+#: apps/main/models.py:40
+msgid "Year"
+msgstr "An"
+
+#: apps/main/models.py:41
+msgid "The calendar year the data refers to."
+msgstr "Anul calendaristic la care se referă datele."
+
+#: apps/main/models.py:49
+msgid "Number of People (thousands)"
+msgstr "Numărul de persoane (mii)"
+
+#: apps/main/models.py:51
+msgid "The number of people, expressed in thousands (e.g., 2.5 = 2,500 people)."
+msgstr "Numărul de persoane, exprimat în mii (de exemplu, 2.5 = 2.500 de persoane)."
+
+#: apps/main/models.py:56 apps/main/models.py:57 config/settings.py:183
+#: templates/base.html:30
+msgid "Statistics"
+msgstr "Statistici"
+
+#: apps/main/validators.py:10
+msgid "The year cannot be in the future."
+msgstr "Anul nu poate fi în viitor."
+
+#: config/settings.py:82
+msgid "English"
+msgstr "Engleză"
+
+#: config/settings.py:83
+msgid "Romanian"
+msgstr "Română"
+
+#: config/settings.py:84
+msgid "Russian"
+msgstr "Rusă"
+
+#: config/settings.py:161
+msgid "Admin"
+msgstr "Admin"
+
+#: config/settings.py:166
+msgid "Users"
+msgstr "Utilizatori"
+
+#: config/settings.py:173
+msgid "Content"
+msgstr "Conținut"
+
+#: templates/base.html:28
+#: venv/lib/python3.11/site-packages/unfold/contrib/guardian/templates/admin/guardian/model/obj_perms_manage.html:10
+#: venv/lib/python3.11/site-packages/unfold/contrib/guardian/templates/admin/guardian/model/obj_perms_manage_group.html:13
+#: venv/lib/python3.11/site-packages/unfold/contrib/guardian/templates/admin/guardian/model/obj_perms_manage_user.html:14
+#: venv/lib/python3.11/site-packages/unfold/contrib/import_export/templates/admin/import_export/export.html:17
+#: venv/lib/python3.11/site-packages/unfold/contrib/import_export/templates/admin/import_export/import.html:28
+#: venv/lib/python3.11/site-packages/unfold/contrib/simple_history/templates/simple_history/object_history_form.html:11
+#: venv/lib/python3.11/site-packages/unfold/templates/admin/app_index.html:15
+#: venv/lib/python3.11/site-packages/unfold/templates/admin/auth/user/change_password.html:13
+#: venv/lib/python3.11/site-packages/unfold/templates/admin/base.html:23
+#: venv/lib/python3.11/site-packages/unfold/templates/admin/change_form.html:18
+#: venv/lib/python3.11/site-packages/unfold/templates/admin/change_list.html:31
+#: venv/lib/python3.11/site-packages/unfold/templates/admin/delete_confirmation.html:17
+#: venv/lib/python3.11/site-packages/unfold/templates/admin/delete_selected_confirmation.html:17
+#: venv/lib/python3.11/site-packages/unfold/templates/admin/object_history.html:9
+#: venv/lib/python3.11/site-packages/unfold/templates/registration/password_change_done.html:12
+#: venv/lib/python3.11/site-packages/unfold/templates/registration/password_change_form.html:12
+#: venv/lib/python3.11/site-packages/unfold/templates/unfold/helpers/site_icon.html:7
+#: venv/lib/python3.11/site-packages/unfold/templates/unfold/helpers/site_icon.html:9
+#: venv/lib/python3.11/site-packages/unfold/templates/unfold/helpers/site_icon.html:11
+#: venv/lib/python3.11/site-packages/unfold/templates/unfold/helpers/site_logo.html:5
+#: venv/lib/python3.11/site-packages/unfold/templates/unfold/helpers/site_logo.html:7
+#: venv/lib/python3.11/site-packages/unfold/templates/unfold/helpers/site_logo.html:9
+msgid "Home"
+msgstr "Acasă"
+
+#: templates/base.html:29
+msgid "Map"
+msgstr "Hartă"
+
+#: templates/base.html:31
+msgid "Learn more"
+msgstr "Află mai multe"
+
+#: templates/maps.html:20
+msgid "Choose"
+msgstr "Alege"
+
+#: templates/maps.html:21
+#: venv/lib/python3.11/site-packages/unfold/contrib/filters/admin/choice_filters.py:22
+#: venv/lib/python3.11/site-packages/unfold/contrib/filters/admin/choice_filters.py:65
+#: venv/lib/python3.11/site-packages/unfold/contrib/filters/admin/choice_filters.py:78
+#: venv/lib/python3.11/site-packages/unfold/contrib/filters/admin/dropdown_filters.py:22
+#: venv/lib/python3.11/site-packages/unfold/contrib/filters/admin/mixins.py:45
+msgid "All"
+msgstr "Toate"
+
+#: templates/maps.html:22
+msgid "Restaurants"
+msgstr "Restaurante"
+
+#: templates/maps.html:23
+msgid "Hotels"
+msgstr "Hoteluri"
+
+#: templates/maps.html:24
+msgid "Entertainment"
+msgstr "Distracție"
+
+#: templates/maps.html:25
+msgid "Pharmacies"
+msgstr "Farmacii"
+
+#: templates/statistics.html:16
+msgid "Primary Disability"
+msgstr "Disabilitate Primară"
+
+#: templates/statistics.html:17
+#, python-format
+msgid ""
+"The number of individuals recognized for the first time with a disability "
+"has increased compared to the previous year. According to data from the "
+"National Council for the Determination of Disability and Work Capacity, in "
+"2023, 14.3 thousand people applied for evaluation. Of these, 12.9 thousand "
+"people (90.5%) were recognized with a primary disability, including 11.2 "
+"thousand adults (86.9%) and 1.6 thousand children (13.1%). The proportion "
+"of people with a primary disability was higher in rural areas, accounting "
+"for 63.3% in 2023."
+msgstr ""
+"Numărul persoanelor recunoscute pentru prima dată cu o dizabilitate "
+"a crescut comparativ cu anul anterior. Conform datelor de la Consiliul "
+"Național pentru Determinarea Dizabilității și Capacității de Muncă, în "
+"2023, 14.3 mii de persoane au solicitat evaluarea. Dintre acestea, 12.9 mii "
+"de persoane (90.5%) au fost recunoscute cu o dizabilitate primară, dintre care "
+"11.2 mii adulți (86.9%) și 1.6 mii copii (13.1%). Proporția persoanelor "
+"cu o dizabilitate primară a fost mai mare în zonele rurale, reprezentând "
+"63.3% în 2023."
+
+#: venv/lib/python3.11/site-packages/django/contrib/messages/apps.py:16
+msgid "Messages"
+msgstr "Mesaje"
+
+#: venv/lib/python3.11/site-packages/django/contrib/sitemaps/apps.py:8
+msgid "Site Maps"
+msgstr "Hărți ale site-ului"
+
+#: venv/lib/python3.11/site-packages/django/contrib/staticfiles/apps.py:9
+msgid "Static Files"
+msgstr "Fișiere Statice"
+
+#: venv/lib/python3.11/site-packages/django/contrib/syndication/apps.py:7
+msgid "Syndication"
+msgstr "Sindicare"
+
+#. Translators: String used to replace omitted page numbers in elided page
+#. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
+#: venv/lib/python3.11/site-packages/django/core/paginator.py:30
+msgid "…"
+msgstr "…"
+
+#: venv/lib/python3.11/site-packages/django/core/paginator.py:32
+msgid "That page number is not an integer"
+msgstr "Numărul paginii nu este un întreg"
+
+#: venv/lib/python3.11/site-packages/django/core/paginator.py:33
+msgid "That page number is less than 1"
+msgstr "Numărul paginii este mai mic decât 1"
+
+#: venv/lib/python3.11/site-packages/django/core/paginator.py:34
+msgid "That page contains no results"
+msgstr "Această pagină nu conține rezultate"
+
+#: venv/lib/python3.11/site-packages/django/core/validators.py:22
+msgid "Enter a valid value."
+msgstr "Introduceți o valoare validă."
+
+#: venv/lib/python3.11/site-packages/django/core/validators.py:70
+msgid "Enter a valid domain name."
+msgstr "Introduceți un nume de domeniu valid."
+
+#: venv/lib/python3.11/site-packages/django/core/validators.py:153
+#: venv/lib/python3.11/site-packages/django/forms/fields.py:775
+msgid "Enter a valid URL."
+msgstr "Introduceți un URL valid."
+
+#: venv/lib/python3.11/site-packages/django/core/validators.py:200
+msgid "Enter a valid integer."
+msgstr "Introduceți un număr întreg valid."
+
+#: venv/lib/python3.11/site-packages/django/core/validators.py:211
+msgid "Enter a valid email address."
+msgstr "Introduceți o adresă de email validă."
+
+#. Translators: "letters" means latin letters: a-z and A-Z.
+#: venv/lib/python3.11/site-packages/django/core/validators.py:289
+msgid ""
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+"Introduceți un „slug” valid, care să conțină litere, numere, liniuțe sau cratime."
+
+#: venv/lib/python3.11/site-packages/django/core/validators.py:297
+msgid ""
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
+msgstr ""
+"Introduceți un „slug” valid, care să conțină litere Unicode, numere, liniuțe sau "
+"cratime."
+
+#: venv/lib/python3.11/site-packages/django/core/validators.py:309
+#: venv/lib/python3.11/site-packages/django/core/validators.py:318
+#: venv/lib/python3.11/site-packages/django/core/validators.py:332
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2220
+#, python-format
+msgid "Enter a valid %(protocol)s address."
+msgstr "Introduceți o adresă validă %(protocol)s."
+
+#: venv/lib/python3.11/site-packages/django/core/validators.py:311
+msgid "IPv4"
+msgstr "IPv4"
+
+#: venv/lib/python3.11/site-packages/django/core/validators.py:334
+msgid "IPv4 or IPv6"
+msgstr "IPv4 sau IPv6"
+
+#: venv/lib/python3.11/site-packages/django/core/validators.py:375
+msgid "Enter only digits separated by commas."
+msgstr "Introduceți doar cifre separate prin virgule."
+
+#: venv/lib/python3.11/site-packages/django/core/validators.py:381
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr "Asigurați-vă că această valoare este %(limit_value)s (este %(show_value)s)."
+
+#: venv/lib/python3.11/site-packages/django/core/validators.py:416
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr "Asigurați-vă că această valoare este mai mică sau egală cu %(limit_value)s."
+
+#: venv/lib/python3.11/site-packages/django/core/validators.py:425
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr "Asigurați-vă că această valoare este mai mare sau egală cu %(limit_value)s."
+
+#: venv/lib/python3.11/site-packages/django/core/validators.py:434
+#, python-format
+msgid "Ensure this value is a multiple of step size %(limit_value)s."
+msgstr "Asigurați-vă că această valoare este un multiplu al pasului %(limit_value)s."
+
+#: venv/lib/python3.11/site-packages/django/core/validators.py:441
+#, python-format
+msgid ""
+"Ensure this value is a multiple of step size %(limit_value)s, starting from "
+"%(offset)s, e.g. %(offset)s, %(valid_value1)s, %(valid_value2)s, and so on."
+msgstr ""
+"Asigurați-vă că această valoare este un multiplu al pasului %(limit_value)s, "
+"începând de la %(offset)s, de exemplu %(offset)s, %(valid_value1)s, "
+"%(valid_value2)s și așa mai departe."
+
+#: venv/lib/python3.11/site-packages/django/core/validators.py:473
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.11/site-packages/django/core/validators.py:491
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.11/site-packages/django/core/validators.py:514
+#: venv/lib/python3.11/site-packages/django/forms/fields.py:366
+#: venv/lib/python3.11/site-packages/django/forms/fields.py:405
+msgid "Enter a number."
+msgstr "Introduceți un număr."
+
+#: venv/lib/python3.11/site-packages/django/core/validators.py:516
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.11/site-packages/django/core/validators.py:521
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.11/site-packages/django/core/validators.py:526
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.11/site-packages/django/core/validators.py:597
+#, python-format
+msgid ""
+"File extension “%(extension)s” is not allowed. Allowed extensions are: "
+"%(allowed_extensions)s."
+msgstr ""
+"Extensia fișierului „%(extension)s” nu este permisă. Extensiile permise sunt: "
+"%(allowed_extensions)s."
+
+#: venv/lib/python3.11/site-packages/django/core/validators.py:659
+msgid "Null characters are not allowed."
+msgstr "Caracterelor nule nu le este permis."
+
+#: venv/lib/python3.11/site-packages/django/db/models/base.py:1600
+#: venv/lib/python3.11/site-packages/django/forms/models.py:908
+#: venv/lib/python3.11/site-packages/unfold/contrib/inlines/admin.py:103
+msgid "and"
+msgstr "și"
+
+#: venv/lib/python3.11/site-packages/django/db/models/base.py:1602
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr "%(model_name)s cu acest %(field_labels)s există deja."
+
+#: venv/lib/python3.11/site-packages/django/db/models/constraints.py:22
+#, python-format
+msgid "Constraint “%(name)s” is violated."
+msgstr "Condiția „%(name)s” a fost încălcată."
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:134
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr "Valoarea %(value)r nu este o alegere validă."
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:135
+msgid "This field cannot be null."
+msgstr "Acest câmp nu poate fi null."
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:136
+msgid "This field cannot be blank."
+msgstr "Acest câmp nu poate fi gol."
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:137
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr "%(model_name)s cu acest %(field_label)s există deja."
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:141
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+"%(field_label)s trebuie să fie unic pentru %(date_field_label)s %(lookup_type)s."
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:180
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr "Câmp de tipul: %(field_type)s"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1162
+#, python-format
+msgid "“%(value)s” value must be either True or False."
+msgstr "Valoarea „%(value)s” trebuie să fie fie True, fie False."
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1163
+#, python-format
+msgid "“%(value)s” value must be either True, False, or None."
+msgstr "Valoarea „%(value)s” trebuie să fie fie True, fie False, fie None."
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1165
+msgid "Boolean (Either True or False)"
+msgstr "Boolean (Fie True, fie False)"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1215
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr "Șir de caractere (până la %(max_length)s)"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1217
+msgid "String (unlimited)"
+msgstr "Șir de caractere (nelimitat)"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1326
+msgid "Comma-separated integers"
+msgstr "Numere întregi separate prin virgulă"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1427
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+"Valoarea „%(value)s” are un format de dată invalid. Trebuie să fie în formatul "
+"YYYY-MM-DD."
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1431
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1566
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+"Valoarea „%(value)s” are formatul corect (YYYY-MM-DD), dar este o dată invalidă."
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1435
+msgid "Date (without time)"
+msgstr "Dată (fără oră)"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1562
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
+"uuuuuu]][TZ] format."
+msgstr ""
+"Valoarea „%(value)s” are un format invalid. Trebuie să fie în formatul "
+"YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ]."
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1570
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+msgstr ""
+"Valoarea „%(value)s” are formatul corect (YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ]), "
+"dar este o dată/oră invalidă."
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1575
+msgid "Date (with time)"
+msgstr "Dată (cu oră)"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1702
+#, python-format
+msgid "“%(value)s” value must be a decimal number."
+msgstr "Valoarea „%(value)s” trebuie să fie un număr zecimal."
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1704
+msgid "Decimal number"
+msgstr "Număr zecimal"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1864
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
+"uuuuuu] format."
+msgstr ""
+"Valoarea „%(value)s” are un format invalid. Trebuie să fie în formatul "
+"[DD] [[HH:]MM:]ss[.uuuuuu]."
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1868
+msgid "Duration"
+msgstr "Durată"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1920
+msgid "Email address"
+msgstr "Adresă de email"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1945
+msgid "File path"
+msgstr "Cale fișier"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2023
+#, python-format
+msgid "“%(value)s” value must be a float."
+msgstr "Valoarea „%(value)s” trebuie să fie un număr în virgulă mobilă."
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2025
+msgid "Floating point number"
+msgstr "Număr în virgulă mobilă"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2065
+#, python-format
+msgid "“%(value)s” value must be an integer."
+msgstr "Valoarea „%(value)s” trebuie să fie un număr întreg."
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2067
+msgid "Integer"
+msgstr "Număr întreg"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2163
+msgid "Big (8 byte) integer"
+msgstr "Număr întreg mare (8 octeți)"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2180
+msgid "Small integer"
+msgstr "Număr întreg mic"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2188
+msgid "IPv4 address"
+msgstr "Adresă IPv4"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2219
+msgid "IP address"
+msgstr "Adresă IP"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2310
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2311
+#, python-format
+msgid "“%(value)s” value must be either None, True or False."
+msgstr "Valoarea „%(value)s” trebuie să fie fie None, True sau False."
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2313
+msgid "Boolean (Either True, False or None)"
+msgstr "Boolean (Fie True, False sau None)"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2364
+msgid "Positive big integer"
+msgstr "Număr întreg mare pozitiv"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2379
+msgid "Positive integer"
+msgstr "Număr întreg pozitiv"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2394
+msgid "Positive small integer"
+msgstr "Număr întreg mic pozitiv"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2410
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr "Slug (până la %(max_length)s)"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2446
+msgid "Text"
+msgstr "Text"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2526
+#, python-format
+msgid "“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] format."
+msgstr "Valoarea „%(value)s” are un format invalid. Trebuie să fie în formatul HH:MM[:ss[.uuuuuu]]."
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2530
+#, python-format
+msgid "“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an invalid time."
+msgstr "Valoarea „%(value)s” are formatul corect (HH:MM[:ss[.uuuuuu]]) dar este un timp invalid."
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2534
+#: venv/lib/python3.11/site-packages/unfold/contrib/filters/forms.py:263
+#: venv/lib/python3.11/site-packages/unfold/contrib/filters/forms.py:279
+#: venv/lib/python3.11/site-packages/unfold/widgets.py:554
+#: venv/lib/python3.11/site-packages/unfold/widgets.py:599
+msgid "Time"
+msgstr "Timp"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2642
+msgid "URL"
+msgstr "URL"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2666
+msgid "Raw binary data"
+msgstr "Date binare brute"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2731
+#, python-format
+msgid "“%(value)s” is not a valid UUID."
+msgstr "„%(value)s” nu este un UUID valid."
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:2733
+msgid "Universally unique identifier"
+msgstr "Identificator universal unic"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/files.py:244
+msgid "File"
+msgstr "Fișier"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/files.py:420
+msgid "Image"
+msgstr "Imagine"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/json.py:24
+msgid "A JSON object"
+msgstr "Un obiect JSON"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/json.py:26
+msgid "Value must be valid JSON."
+msgstr "Valoarea trebuie să fie un JSON valid."
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/related.py:978
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r is not a valid choice."
+msgstr "Instanța de %(model)s cu %(field)s %(value)r nu este o alegere validă."
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/related.py:981
+msgid "Foreign Key (type determined by related field)"
+msgstr "Cheie străină (tipul este determinat de câmpul asociat)"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/related.py:1275
+msgid "One-to-one relationship"
+msgstr "Relație unu-la-unu"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/related.py:1332
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr "Relație %(from)s-%(to)s"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/related.py:1334
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr "Relații %(from)s-%(to)s"
+
+#: venv/lib/python3.11/site-packages/django/db/models/fields/related.py:1382
+msgid "Many-to-many relationship"
+msgstr "Relație de tip mulți-la-mulți"
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the label
+#: venv/lib/python3.11/site-packages/django/forms/boundfield.py:185
+msgid ":?.!"
+msgstr ":?.!"
+
+#: venv/lib/python3.11/site-packages/django/forms/fields.py:95
+msgid "This field is required."
+msgstr "Acest câmp este obligatoriu."
+
+#: venv/lib/python3.11/site-packages/django/forms/fields.py:315
+msgid "Enter a whole number."
+msgstr "Introduceți un număr întreg."
+
+#: venv/lib/python3.11/site-packages/django/forms/fields.py:486
+#: venv/lib/python3.11/site-packages/django/forms/fields.py:1267
+msgid "Enter a valid date."
+msgstr "Introduceți o dată validă."
+
+#: venv/lib/python3.11/site-packages/django/forms/fields.py:509
+#: venv/lib/python3.11/site-packages/django/forms/fields.py:1268
+msgid "Enter a valid time."
+msgstr "Introduceți o oră validă."
+
+#: venv/lib/python3.11/site-packages/django/forms/fields.py:536
+msgid "Enter a valid date/time."
+msgstr "Introduceți o dată/oră validă."
+
+#: venv/lib/python3.11/site-packages/django/forms/fields.py:570
+msgid "Enter a valid duration."
+msgstr "Introduceți o durată validă."
+
+#: venv/lib/python3.11/site-packages/django/forms/fields.py:571
+#, python-brace-format
+msgid "The number of days must be between {min_days} and {max_days}."
+msgstr "Numărul de zile trebuie să fie între {min_days} și {max_days}."
+
+#: venv/lib/python3.11/site-packages/django/forms/fields.py:640
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr "Nu a fost trimis niciun fișier. Verificați tipul de codificare al formularului."
+
+#: venv/lib/python3.11/site-packages/django/forms/fields.py:641
+msgid "No file was submitted."
+msgstr "Nu a fost trimis niciun fișier."
+
+#: venv/lib/python3.11/site-packages/django/forms/fields.py:642
+msgid "The submitted file is empty."
+msgstr "Fișierul trimis este gol."
+
+#: venv/lib/python3.11/site-packages/django/forms/fields.py:644
+#, python-format
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.11/site-packages/django/forms/fields.py:649
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr "Vă rugăm să trimiteți un fișier sau să bifați căsuța de verificare clară, nu ambele."
+
+#: venv/lib/python3.11/site-packages/django/forms/fields.py:717
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+"Încărcați o imagine validă. Fișierul pe care l-ați încărcat nu este o imagine sau este o imagine coruptă."
+
+#: venv/lib/python3.11/site-packages/django/forms/fields.py:889
+#: venv/lib/python3.11/site-packages/django/forms/fields.py:975
+#: venv/lib/python3.11/site-packages/django/forms/models.py:1592
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr "Selectați o alegere validă. %(value)s nu este una dintre alegerile disponibile."
+
+#: venv/lib/python3.11/site-packages/django/forms/fields.py:977
+#: venv/lib/python3.11/site-packages/django/forms/fields.py:1096
+#: venv/lib/python3.11/site-packages/django/forms/models.py:1590
+msgid "Enter a list of values."
+msgstr "Introduceți o listă de valori."
+
+#: venv/lib/python3.11/site-packages/django/forms/fields.py:1097
+msgid "Enter a complete value."
+msgstr "Introduceți o valoare completă."
+
+#: venv/lib/python3.11/site-packages/django/forms/fields.py:1339
+msgid "Enter a valid UUID."
+msgstr "Introduceți un UUID valid."
+
+#: venv/lib/python3.11/site-packages/django/forms/fields.py:1369
+msgid "Enter a valid JSON."
+msgstr "Introduceți un JSON valid."
+
+#. Translators: This is the default suffix added to form field labels
+#: venv/lib/python3.11/site-packages/django/forms/forms.py:97
+msgid ":"
+msgstr ":"
+
+#: venv/lib/python3.11/site-packages/django/forms/forms.py:239
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr "(Câmp ascuns %(name)s) %(error)s"
+
+#: venv/lib/python3.11/site-packages/django/forms/formsets.py:61
+#, python-format
+msgid ""
+"ManagementForm data is missing or has been tampered with. Missing fields: "
+"%(field_names)s. You may need to file a bug report if the issue persists."
+msgstr ""
+"Datele ManagementForm lipsesc sau au fost modificate. Câmpuri lipsă: %(field_names)s. Ar putea fi necesar să trimiteți un raport de eroare dacă problema persistă."
+
+#: venv/lib/python3.11/site-packages/django/forms/formsets.py:65
+#, python-format
+msgid "Please submit at most %(num)d form."
+msgid_plural "Please submit at most %(num)d forms."
+msgstr[0] "Vă rugăm să trimiteți cel mult %(num)d formular."
+msgstr[1] "Vă rugăm să trimiteți cel mult %(num)d formulare."
+
+#: venv/lib/python3.11/site-packages/django/forms/formsets.py:70
+#, python-format
+msgid "Please submit at least %(num)d form."
+msgid_plural "Please submit at least %(num)d forms."
+msgstr[0] "Vă rugăm să trimiteți cel puțin %(num)d formular."
+msgstr[1] "Vă rugăm să trimiteți cel puțin %(num)d formulare."
+
+#: venv/lib/python3.11/site-packages/django/forms/formsets.py:484
+#: venv/lib/python3.11/site-packages/django/forms/formsets.py:491
+msgid "Order"
+msgstr "Ordine"
+
+#: venv/lib/python3.11/site-packages/django/forms/formsets.py:499
+#: venv/lib/python3.11/site-packages/unfold/contrib/import_export/templates/admin/import_export/import_preview.html:26
+#: venv/lib/python3.11/site-packages/unfold/templates/admin/submit_line.html:62
+msgid "Delete"
+msgstr "Șterge"
+
+#: venv/lib/python3.11/site-packages/django/forms/models.py:901
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr "Vă rugăm să corectați datele duplicate pentru %(field)s."
+
+#: venv/lib/python3.11/site-packages/django/forms/models.py:906
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr "Vă rugăm să corectați datele duplicate pentru %(field)s, care trebuie să fie unice."
+
+#: venv/lib/python3.11/site-packages/django/forms/models.py:913
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+"Vă rugăm să corectați datele duplicate pentru %(field_name)s, care trebuie să fie unice pentru %(lookup)s din %(date_field)s."
+
+#: venv/lib/python3.11/site-packages/django/forms/models.py:922
+msgid "Please correct the duplicate values below."
+msgstr "Vă rugăm să corectați valorile duplicate de mai jos."
+
+#: venv/lib/python3.11/site-packages/django/forms/models.py:1359
+msgid "The inline value did not match the parent instance."
+msgstr "Valoarea inline nu s-a potrivit cu instanța părinte."
+
+#: venv/lib/python3.11/site-packages/django/forms/models.py:1450
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr "Selectați o alegere validă. Acea alegere nu este una dintre alegerile disponibile."
+
+#: venv/lib/python3.11/site-packages/django/forms/models.py:1594
+#, python-format
+msgid "“%(pk)s” is not a valid value."
+msgstr "„%(pk)s” nu este o valoare validă."
+
+#: venv/lib/python3.11/site-packages/django/forms/utils.py:229
+#, python-format
+msgid ""
+"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+"%(datetime)s nu a putut fi interpretat în fusul orar %(current_timezone)s; poate fi ambiguu sau poate nu exista."
+
+#: venv/lib/python3.11/site-packages/django/forms/widgets.py:527
+msgid "Clear"
+msgstr "Șterge"
+
+#: venv/lib/python3.11/site-packages/django/forms/widgets.py:528
+msgid "Currently"
+msgstr "Curent"
+
+#: venv/lib/python3.11/site-packages/django/forms/widgets.py:529
+#: venv/lib/python3.11/site-packages/unfold/templates/admin/edit_inline/stacked.html:57
+#: venv/lib/python3.11/site-packages/unfold/templates/unfold/helpers/app_list_default.html:42
+#: venv/lib/python3.11/site-packages/unfold/templates/unfold/helpers/edit_inline/tabular_title.html:23
+msgid "Change"
+msgstr "Schimbă"
+
+#: venv/lib/python3.11/site-packages/django/forms/widgets.py:866
+#: venv/lib/python3.11/site-packages/unfold/templates/unfold/helpers/boolean.html:8
+msgid "Unknown"
+msgstr "Necunoscut"
+
+#: venv/lib/python3.11/site-packages/django/forms/widgets.py:867
+#: venv/lib/python3.11/site-packages/unfold/contrib/filters/admin/choice_filters.py:96
+msgid "Yes"
+msgstr "Da"
+
+#: venv/lib/python3.11/site-packages/django/forms/widgets.py:868
+#: venv/lib/python3.11/site-packages/unfold/contrib/filters/admin/choice_filters.py:97
+msgid "No"
+msgstr "Nu"
+
+#. Translators: Please do not add spaces around commas.
+#: venv/lib/python3.11/site-packages/django/template/defaultfilters.py:873
+msgid "yes,no,maybe"
+msgstr "da,nu,poate"
+
+#: venv/lib/python3.11/site-packages/django/template/defaultfilters.py:903
+#: venv/lib/python3.11/site-packages/django/template/defaultfilters.py:920
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] "%(size)d bytet"
+msgstr[1] "%(size)d byte"
+
+#: venv/lib/python3.11/site-packages/django/template/defaultfilters.py:922
+#, python-format
+msgid "%s KB"
+msgstr "%s KB"
+
+#: venv/lib/python3.11/site-packages/django/template/defaultfilters.py:924
+#, python-format
+msgid "%s MB"
+msgstr "%s MB"
+
+#: venv/lib/python3.11/site-packages/django/template/defaultfilters.py:926
+#, python-format
+msgid "%s GB"
+msgstr "%s GB"
+
+#: venv/lib/python3.11/site-packages/django/template/defaultfilters.py:928
+#, python-format
+msgid "%s TB"
+msgstr "%s TB"
+
+#: venv/lib/python3.11/site-packages/django/template/defaultfilters.py:930
+#, python-format
+msgid "%s PB"
+msgstr "%s PB"
+
+#: venv/lib/python3.11/site-packages/django/utils/dateformat.py:74
+msgid "p.m."
+msgstr "p.m."
+
+#: venv/lib/python3.11/site-packages/django/utils/dateformat.py:75
+msgid "a.m."
+msgstr "a.m."
+
+#: venv/lib/python3.11/site-packages/django/utils/dateformat.py:80
+msgid "PM"
+msgstr "PM"
+
+#: venv/lib/python3.11/site-packages/django/utils/dateformat.py:81
+msgid "AM"
+msgstr "AM"
+
+#: venv/lib/python3.11/site-packages/django/utils/dateformat.py:153
+msgid "midnight"
+msgstr "miezul nopții"
+
+#: venv/lib/python3.11/site-packages/django/utils/dateformat.py:155
+msgid "noon"
+msgstr "amiază"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:7
+msgid "Monday"
+msgstr "Luni"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:8
+msgid "Tuesday"
+msgstr "Marți"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:9
+msgid "Wednesday"
+msgstr "Miercuri"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:10
+msgid "Thursday"
+msgstr "Joi"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:11
+msgid "Friday"
+msgstr "Vineri"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:12
+msgid "Saturday"
+msgstr "Sâmbătă"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:13
+msgid "Sunday"
+msgstr "Duminică"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:16
+msgid "Mon"
+msgstr "Lun"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:17
+msgid "Tue"
+msgstr "Mar"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:18
+msgid "Wed"
+msgstr "Mie"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:19
+msgid "Thu"
+msgstr "Joi"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:20
+msgid "Fri"
+msgstr "Vin"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:21
+msgid "Sat"
+msgstr "Sâm"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:22
+msgid "Sun"
+msgstr "Dum"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:25
+msgid "January"
+msgstr "Ianuarie"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:26
+msgid "February"
+msgstr "Februarie"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:27
+msgid "March"
+msgstr "Martie"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:28
+msgid "April"
+msgstr "Aprilie"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:29
+msgid "May"
+msgstr "Mai"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:30
+msgid "June"
+msgstr "Iunie"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:31
+msgid "July"
+msgstr "Iulie"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:32
+msgid "August"
+msgstr "August"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:33
+msgid "September"
+msgstr "Septembrie"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:34
+msgid "October"
+msgstr "Octombrie"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:35
+msgid "November"
+msgstr "Noiembrie"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:36
+msgid "December"
+msgstr "Decembrie"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:39
+msgid "jan"
+msgstr "ian"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:40
+msgid "feb"
+msgstr "feb"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:41
+msgid "mar"
+msgstr "mar"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:42
+msgid "apr"
+msgstr "apr"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:43
+msgid "may"
+msgstr "mai"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:44
+msgid "jun"
+msgstr "iun"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:45
+msgid "jul"
+msgstr "iul"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:46
+msgid "aug"
+msgstr "aug"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:47
+msgid "sep"
+msgstr "sep"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:48
+msgid "oct"
+msgstr "oct"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:49
+msgid "nov"
+msgstr "nov"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:50
+msgid "dec"
+msgstr "dec"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:53
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr "Ian."
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:54
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr "Feb."
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:55
+msgctxt "abbrev. month"
+msgid "March"
+msgstr "Mart."
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:56
+msgctxt "abbrev. month"
+msgid "April"
+msgstr "Apr."
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:57
+msgctxt "abbrev. month"
+msgid "May"
+msgstr "Mai"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:58
+msgctxt "abbrev. month"
+msgid "June"
+msgstr "Iun."
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:59
+msgctxt "abbrev. month"
+msgid "July"
+msgstr "Iul."
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:60
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr "Aug."
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:61
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr "Sept."
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:62
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr "Oct."
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:63
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr "Nov."
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:64
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr "Dec."
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:67
+msgctxt "alt. month"
+msgid "January"
+msgstr "Ianuarie"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:68
+msgctxt "alt. month"
+msgid "February"
+msgstr "Februarie"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:69
+msgctxt "alt. month"
+msgid "March"
+msgstr "Martie"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:70
+msgctxt "alt. month"
+msgid "April"
+msgstr "Aprilie"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:71
+msgctxt "alt. month"
+msgid "May"
+msgstr "Mai"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:72
+msgctxt "alt. month"
+msgid "June"
+msgstr "Iunie"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:73
+msgctxt "alt. month"
+msgid "July"
+msgstr "Iulie"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:74
+msgctxt "alt. month"
+msgid "August"
+msgstr "August"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:75
+msgctxt "alt. month"
+msgid "September"
+msgstr "Septembrie"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:76
+msgctxt "alt. month"
+msgid "October"
+msgstr "Octombrie"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:77
+msgctxt "alt. month"
+msgid "November"
+msgstr "Noiembrie"
+
+#: venv/lib/python3.11/site-packages/django/utils/dates.py:78
+msgctxt "alt. month"
+msgid "December"
+msgstr "Decembrie"
+
+#: venv/lib/python3.11/site-packages/django/utils/ipv6.py:20
+msgid "This is not a valid IPv6 address."
+msgstr "Aceasta nu este o adresă IPv6 validă."
+
+#: venv/lib/python3.11/site-packages/django/utils/text.py:67
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s…"
+msgstr "%(truncated_text)s…"
+
+#: venv/lib/python3.11/site-packages/django/utils/text.py:278
+msgid "or"
+msgstr "sau"
+
+#. Translators: This string is used as a separator between list elements
+#: venv/lib/python3.11/site-packages/django/utils/text.py:297
+#: venv/lib/python3.11/site-packages/django/utils/timesince.py:135
+msgid ", "
+msgstr ", "
+
+#: venv/lib/python3.11/site-packages/django/utils/timesince.py:8
+#, python-format
+msgid "%(num)d year"
+msgid_plural "%(num)d years"
+msgstr[0] "%(num)d an"
+msgstr[1] "%(num)d ani"
+
+#: venv/lib/python3.11/site-packages/django/utils/timesince.py:9
+#, python-format
+msgid "%(num)d month"
+msgid_plural "%(num)d months"
+msgstr[0] "%(num)d lună"
+msgstr[1] "%(num)d luni"
+
+#: venv/lib/python3.11/site-packages/django/utils/timesince.py:10
+#, python-format
+msgid "%(num)d week"
+msgid_plural "%(num)d weeks"
+msgstr[0] "%(num)d săptămână"
+msgstr[1] "%(num)d săptămâni"
+
+#: venv/lib/python3.11/site-packages/django/utils/timesince.py:11
+#, python-format
+msgid "%(num)d day"
+msgid_plural "%(num)d days"
+msgstr[0] "%(num)d zi"
+msgstr[1] "%(num)d zile"
+
+#: venv/lib/python3.11/site-packages/django/utils/timesince.py:12
+#, python-format
+msgid "%(num)d hour"
+msgid_plural "%(num)d hours"
+msgstr[0] "%(num)d oră"
+msgstr[1] "%(num)d ore"
+
+#: venv/lib/python3.11/site-packages/django/utils/timesince.py:13
+#, python-format
+msgid "%(num)d minute"
+msgid_plural "%(num)d minutes"
+msgstr[0] "%(num)d minut"
+msgstr[1] "%(num)d minute"
+
+#: venv/lib/python3.11/site-packages/django/views/csrf.py:29
+msgid "Forbidden"
+msgstr "Interzis"
+
+#: venv/lib/python3.11/site-packages/django/views/csrf.py:30
+msgid "CSRF verification failed. Request aborted."
+msgstr "Verificarea CSRF a eșuat. Cererea a fost anulată."
+
+#: venv/lib/python3.11/site-packages/django/views/csrf.py:34
+msgid ""
+"You are seeing this message because this HTTPS site requires a “Referer "
+"header” to be sent by your web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+"Veți vedea acest mesaj deoarece acest site HTTPS necesită un „header Referer” "
+"trimis de browserul dumneavoastră, dar acesta nu a fost trimis. Acest header "
+"este necesar din motive de securitate, pentru a asigura că browserul nu este "
+"comandat de terți."
+
+#: venv/lib/python3.11/site-packages/django/views/csrf.py:40
+msgid ""
+"If you have configured your browser to disable “Referer” headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for “same-"
+"origin” requests."
+msgstr ""
+"Dacă ați configurat browserul pentru a dezactiva header-ele „Referer”, vă "
+"rugăm să le reactivați, cel puțin pentru acest site, pentru conexiunile HTTPS, "
+"sau pentru cererile „same-origin”."
+
+#: venv/lib/python3.11/site-packages/django/views/csrf.py:45
+msgid ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the “Referrer-Policy: no-referrer” header, please remove them. The "
+"CSRF protection requires the “Referer” header to do strict referer checking. "
+"If you’re concerned about privacy, use alternatives like <a "
+"rel=\"noreferrer\" …> for links to third-party sites."
+msgstr ""
+"Dacă utilizați eticheta <meta name=\"referrer\" content=\"no-referrer\"> sau "
+"includeți header-ul „Referrer-Policy: no-referrer”, vă rugăm să le eliminați. "
+"Protecția CSRF necesită header-ul „Referer” pentru a efectua verificări stricte. "
+"Dacă sunteți îngrijorat de confidențialitate, utilizați alternative precum <a "
+"rel=\"noreferrer\" …> pentru linkuri către site-uri terțe."
+
+#: venv/lib/python3.11/site-packages/django/views/csrf.py:54
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr ""
+"Veți vedea acest mesaj deoarece acest site necesită un cookie CSRF atunci când "
+"trimiteți formulare. Acest cookie este necesar din motive de securitate, pentru a "
+"asigura că browserul nu este comandat de terți."
+
+#: venv/lib/python3.11/site-packages/django/views/csrf.py:60
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for “same-origin” requests."
+msgstr "Dacă ați configurat browserul să dezactiveze cookie-urile, vă rugăm să le reactivați, cel puțin pentru acest site sau pentru cererile „de același origin”."
+
+#: venv/lib/python3.11/site-packages/django/views/csrf.py:66
+msgid "More information is available with DEBUG=True."
+msgstr "Mai multe informații sunt disponibile cu DEBUG=True."
+
+#: venv/lib/python3.11/site-packages/django/views/generic/dates.py:44
+msgid "No year specified"
+msgstr "Nu a fost specificat niciun an"
+
+#: venv/lib/python3.11/site-packages/django/views/generic/dates.py:64
+#: venv/lib/python3.11/site-packages/django/views/generic/dates.py:115
+#: venv/lib/python3.11/site-packages/django/views/generic/dates.py:214
+msgid "Date out of range"
+msgstr "Dată în afacerea intervalului"
+
+#: venv/lib/python3.11/site-packages/django/views/generic/dates.py:94
+msgid "No month specified"
+msgstr "Nu a fost specificată nicio lună"
+
+#: venv/lib/python3.11/site-packages/django/views/generic/dates.py:147
+msgid "No day specified"
+msgstr "Nu a fost specificată nicio zi"
+
+#: venv/lib/python3.11/site-packages/django/views/generic/dates.py:194
+msgid "No week specified"
+msgstr "Nu a fost specificată nicio săptămână"
+
+#: venv/lib/python3.11/site-packages/django/views/generic/dates.py:353
+#: venv/lib/python3.11/site-packages/django/views/generic/dates.py:384
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr "Niciun %(verbose_name_plural)s disponibil"
+
+#: venv/lib/python3.11/site-packages/django/views/generic/dates.py:680
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because %(class_name)s."
+"allow_future is False."
+msgstr ""
+"Viitorul %(verbose_name_plural)s nu este disponibil deoarece "
+"%(class_name)s.allow_future este False."
+
+#: venv/lib/python3.11/site-packages/django/views/generic/dates.py:720
+#, python-format
+msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
+msgstr "Șirul de date „%(datestr)s” este invalid pentru formatul „%(format)s”"
+
+#: venv/lib/python3.11/site-packages/django/views/generic/detail.py:56
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr "Nu s-a găsit niciun %(verbose_name)s care să se potrivească cu interogarea"
+
+#: venv/lib/python3.11/site-packages/django/views/generic/list.py:70
+msgid "Page is not “last”, nor can it be converted to an int."
+msgstr "Pagina nu este „ultimă” și nu poate fi convertită într-un întreg."
+
+#: venv/lib/python3.11/site-packages/django/views/generic/list.py:77
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr "Pagină invalidă (%(page_number)s): %(message)s"
+
+#: venv/lib/python3.11/site-packages/django/views/generic/list.py:173
+#, python-format
+msgid "Empty list and “%(class_name)s.allow_empty” is False."
+msgstr "Listă goală și „%(class_name)s.allow_empty” este False."
+
+#: venv/lib/python3.11/site-packages/django/views/static.py:49
+msgid "Directory indexes are not allowed here."
+msgstr "Indexurile directoarelor nu sunt permise aici."
+
+#: venv/lib/python3.11/site-packages/django/views/static.py:51
+#, python-format
+msgid "“%(path)s” does not exist"
+msgstr "„%(path)s” nu există"
+
+#: venv/lib/python3.11/site-packages/django/views/static.py:68
+#: venv/lib/python3.11/site-packages/django/views/templates/directory_index.html:8
+#: venv/lib/python3.11/site-packages/django/views/templates/directory_index.html:11
+#, python-format
+msgid "Index of %(directory)s"
+msgstr "Indexul directorului %(directory)s"
+
+#: venv/lib/python3.11/site-packages/django/views/templates/default_urlconf.html:7
+#: venv/lib/python3.11/site-packages/django/views/templates/default_urlconf.html:204
+msgid "The install worked successfully! Congratulations!"
+msgstr "Instalarea a avut succes! Felicitări!"
+
+#: venv/lib/python3.11/site-packages/django/views/templates/default_urlconf.html:206
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+"Vezi <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">notele de lansare</a> pentru Django %(version)s"
+
+#: venv/lib/python3.11/site-packages/django/views/templates/default_urlconf.html:208
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" "
+"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
+"configured any URLs."
+msgstr ""
+"Vezi această pagină deoarece <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" "
+"rel=\"noopener\">DEBUG=True</a> se află în fișierul tău de setări și nu ai configurat niciun URL."
+
+#: venv/lib/python3.11/site-packages/django/views/templates/default_urlconf.html:217
+msgid "Django Documentation"
+msgstr "Documentația Django"
+
+#: venv/lib/python3.11/site-packages/django/views/templates/default_urlconf.html:218
+msgid "Topics, references, &amp; how-to’s"
+msgstr "Subiecte, referințe și ghiduri"
+
+#: venv/lib/python3.11/site-packages/django/views/templates/default_urlconf.html:226
+msgid "Tutorial: A Polling App"
+msgstr "Tutorial: O aplicație de sondaje"
+
+#: venv/lib/python3.11/site-packages/django/views/templates/default_urlconf.html:227
+msgid "Get started with Django"
+msgstr "Începe cu Django"
+
+#: venv/lib/python3.11/site-packages/django/views/templates/default_urlconf.html:235
+msgid "Django Community"
+msgstr "Comunitatea Django"
+
+#: venv/lib/python3.11/site-packages/django/views/templates/default_urlconf.html:236
+msgid "Connect, get help, or contribute"
+msgstr "Conectează-te, cere ajutor sau contribuie"
+
+#: venv/lib/python3.11/site-packages/unfold/admin.py:30
+#: venv/lib/python3.11/site-packages/unfold/templatetags/unfold_list.py:334
+msgid "Select record"
+msgstr "Selectează înregistrare"
+
+#: venv/lib/python3.11/site-packages/unfold/admin.py:161
+msgid "Select action"
+msgstr "Selectează acțiune"
+
+msgid " By %(filter_title)s "
+msgstr " De către %(filter_title)s "
+
+msgid "Value"
+msgstr "Valoare"
+
+msgid "From"
+msgstr "De la"
+
+msgid "To"
+msgstr "Până la"
+
+msgid "Date from"
+msgstr "Data de la"
+
+msgid "Date to"
+msgstr "Data până la"
+
+msgid "Not enough data."
+msgstr "Nu sunt suficiente date."
+
+msgid "Add new item"
+msgstr "Adaugă un element nou"
+
+msgid "Paragraph"
+msgstr "Paragraf"
+
+msgid "Underlined"
+msgstr "Subliniat"
+
+msgid "Bold"
+msgstr "Îngroșat"
+
+msgid "Italic"
+msgstr "Italic"
+
+msgid "Strike"
+msgstr "Tăiat"
+
+msgid "Link"
+msgstr "Legătură"
+
+msgid "Heading"
+msgstr "Titlu"
+
+msgid "Quote"
+msgstr "Citat"
+
+msgid "Code"
+msgstr "Cod"
+
+msgid "Unordered list"
+msgstr "Listă neordonată"
+
+msgid "Ordered list"
+msgstr "Listă ordonată"
+
+msgid "Indent increase"
+msgstr "Creștere indentare"
+
+msgid "Indent decrease"
+msgstr "Scădere indentare"
+
+msgid "Undo"
+msgstr "Anulare"
+
+msgid "Redo"
+msgstr "Refă"
+
+msgid "Enter an URL"
+msgstr "Introduceți un URL"
+
+msgid "Unlink"
+msgstr "Deconectare"
+
+msgid "Object permissions"
+msgstr "Permisiuni obiect"
+
+msgid "Object"
+msgstr "Obiect"
+
+msgid "Group"
+msgstr "Grup"
+
+msgid "Save"
+msgstr "Salvează"
+
+msgid "User"
+msgstr "Utilizator"
+
+msgid "Group permissions"
+msgstr "Permisiuni grup"
+
+msgid "Action"
+msgstr "Acțiune"
+
+msgid "Edit"
+msgstr "Editează"
+
+msgid "Manage group"
+msgstr "Gestionează grupul"
+
+msgid "User permissions"
+msgstr "Permisiuni utilizator"
+
+msgid "Manage user"
+msgstr "Gestionează utilizatorul"
+
+msgid "Export"
+msgstr "Exportă"
+
+msgid "Import"
+msgstr "Importă"
+
+msgid "Export %(len)s selected item."
+msgid_plural "Export %(len)s selected items."
+msgstr[0] "Exportă %(len)s element selectat."
+msgstr[1] "Exportă %(len)s elemente selectate."
+
+msgid "This exporter will export the following fields"
+msgstr "Acest exportator va exporta următoarele câmpuri"
+
+msgid "Submit"
+msgstr "Trimite"
+
+msgid ""
+"Below is a preview of data to be imported. If you are satisfied with the "
+"results, click 'Confirm import'"
+msgstr ""
+"Mai jos este o previzualizare a datelor care vor fi importate. Dacă sunteți mulțumit de "
+"rezultate, dați click pe 'Confirmați importul'"
+
+msgid "Confirm import"
+msgstr "Confirmați importul"
+
+msgid "Line number"
+msgstr "Număr linie"
+
+msgid "New"
+msgstr "Nou"
+
+msgid "Skipped"
+msgstr "Ocolit"
+
+msgid "Update"
+msgstr "Actualizează"
+
+msgid "Some rows failed to validate"
+msgstr "Unele rânduri nu au trecut validarea"
+
+msgid ""
+"Please correct these errors in your data where possible, then reupload it "
+"using the form above."
+msgstr ""
+"Vă rugăm să corectați aceste erori în datele dumneavoastră, acolo unde este posibil, "
+"apoi să le reîncărcați folosind formularul de mai sus."
+
+msgid "Row"
+msgstr "Rând"
+
+msgid "Errors"
+msgstr "Erori"
+
+msgid "Non field specific"
+msgstr "Nu este specificat un câmp"
+
+msgid "This exporter will export the following fields: "
+msgstr "Acest exportator va exporta următoarele câmpuri: "
+
+msgid "This importer will import the following fields: "
+msgstr "Acest importator va importa următoarele câmpuri: "
+
+msgid "%(class_name)s %(instance)s"
+msgstr "%(class_name)s %(instance)s"
+
+msgid ""
+"Deleting %(class_name)s %(instance)s would require deleting the following "
+"protected related objects: %(related_objects)s"
+msgstr ""
+"Ștergerea %(class_name)s %(instance)s ar necesita ștergerea următoarelor obiecte "
+"legate protejate: %(related_objects)s"
+
+msgid ""
+"Choose a date from the list below to revert to a previous version of this "
+"object."
+msgstr ""
+"Alegeți o dată din lista de mai jos pentru a reveni la o versiune anterioară a acestui "
+"obiect."
+
+msgid "entry"
+msgid_plural "entries"
+msgstr[0] "intrare"
+msgstr[1] "intrări"
+
+msgid "This object doesn't have a change history."
+msgstr "Acest obiect nu are o istorie a modificărilor."
+
+msgid "History"
+msgstr "Istoric"
+
+msgid "View"
+msgstr "Vizualizează"
+
+msgid "Revert"
+msgstr "Revino"
+
+msgid ""
+"Press the 'Revert' button below to revert to this version of the object."
+msgstr ""
+"Apăsați pe butonul 'Revino' de mai jos pentru a reveni la această versiune a obiectului."
+
+msgid "Press the 'Change History' button below to edit the history."
+msgstr "Apăsați butonul 'Istoricul modificărilor' de mai jos pentru a edita istoricul."
+
+msgid "Date/time"
+msgstr "Dată/ora"
+
+msgid "Comment"
+msgstr "Comentariu"
+
+msgid "Changed by"
+msgstr "Modificat de"
+
+msgid "Change reason"
+msgstr "Motivul schimbării"
+
+msgid "Changes"
+msgstr "Modificări"
+
+msgid "None"
+msgstr "Niciuna"
+
+msgid "Change History"
+msgstr "Istoricul modificărilor"
+
+msgid "Close"
+msgstr "Închide"
+
+msgid "Select action to run"
+msgstr "Selectați acțiunea de executat"
+
+msgid ""
+"Raw passwords are not stored, so there is no way to see this user’s "
+"password, but you can change the password using <a href=\"{}\" class=\"text-"
+"primary-600 dark:text-primary-500\">this form</a>."
+msgstr ""
+"Parolele brute nu sunt stocate, astfel încât nu există nicio modalitate de a vedea "
+"parola acestui utilizator, dar o puteți schimba folosind <a href=\"{}\" class=\"text-"
+"primary-600 dark:text-primary-500\">acest formular</a>."
+
+msgid "Select value"
+msgstr "Selectați valoarea"
+
+msgid "Run the selected action"
+msgstr "Executați acțiunea selectată"
+
+msgid "Run"
+msgstr "Execută"
+
+msgid "Click here to select the objects across all pages"
+msgstr "Dați click aici pentru a selecta obiectele din toate paginile"
+
+msgid "Select all %(total_count)s %(module_name)s"
+msgstr "Selectați toate %(total_count)s %(module_name)s"
+
+msgid "Clear selection"
+msgstr "Șterge selecția"
+
+msgid "Django site admin"
+msgstr "Administrație site Django"
+
+msgid "Models in the %(name)s application"
+msgstr "Modele în aplicația %(name)s"
+
+msgid "You don’t have permission to view or edit anything."
+msgstr "Nu aveți permisiunea de a vizualiza sau edita nimic."
+
+msgid ""
+"First, enter a username and password. Then, you’ll be able to edit more user "
+"options."
+msgstr ""
+"Mai întâi, introduceți un nume de utilizator și o parolă. Apoi, veți putea edita mai multe opțiuni ale utilizatorului."
+
+msgid "Enter a username and password."
+msgstr "Introduceți un nume de utilizator și o parolă."
+
+msgid "Change password"
+msgstr "Schimbați parola"
+
+msgid "Enter a new password for the user <strong>%(username)s</strong>."
+msgstr "Introduceți o parolă nouă pentru utilizatorul <strong>%(username)s</strong>."
+
+msgid "Add %(name)s"
+msgstr "Adăugați %(name)s"
+
+msgid "View on site"
+msgstr "Vizualizați pe site"
+
+msgid "Filters"
+msgstr "Filtre"
+
+msgid "Select all rows"
+msgstr "Selectați toate rândurile"
+
+msgid "Toggle sorting"
+msgstr "Comutați sortarea"
+
+msgid "Remove from sorting"
+msgstr "Îndepărtați din sortare"
+
+msgid "Sorting priority: %(priority_number)s"
+msgstr "Prioritate sortare: %(priority_number)s"
+
+msgid "Expand row"
+msgstr "Extindeți rândul"
+
+msgid "Deleting the %(object_name)s '%(escaped_object)s' would result in deleting related objects, but your account doesn't have permission to delete the following types of objects:"
+msgstr "Ștergerea %(object_name)s '%(escaped_object)s' ar duce la ștergerea obiectelor asociate, dar contul dumneavoastră nu are permisiunea de a șterge următoarele tipuri de obiecte:"
+
+msgid "Deleting the %(object_name)s '%(escaped_object)s' would require deleting the following protected related objects:"
+msgstr "Ștergerea %(object_name)s '%(escaped_object)s' ar necesita ștergerea următoarelor obiecte asociate protejate:"
+
+msgid "Are you sure you want to delete the %(object_name)s \"%(escaped_object)s\"? All of the following related items will be deleted:"
+msgstr "Sunteți sigur că doriți să ștergeți %(object_name)s \"%(escaped_object)s\"? Toate următoarele obiecte asociate vor fi șterse:"
+
+msgid "Objects"
+msgstr "Obiecte"
+
+msgid "Delete multiple objects"
+msgstr "Ștergeți mai multe obiecte"
+
+msgid "Deleting the selected %(objects_name)s would result in deleting related objects, but your account doesn't have permission to delete the following types of objects:"
+msgstr "Ștergerea %(objects_name)s selectate ar duce la ștergerea obiectelor asociate, dar contul dumneavoastră nu are permisiunea de a șterge următoarele tipuri de obiecte:"
+
+msgid "Deleting the selected %(objects_name)s would require deleting the following protected related objects:"
+msgstr "Ștergerea %(objects_name)s selectate ar necesita ștergerea următoarelor obiecte asociate protejate:"
+
+msgid "Are you sure you want to delete the selected %(objects_name)s? All of the following objects and their related items will be deleted:"
+msgstr "Sunteți sigur că doriți să ștergeți %(objects_name)s selectate? Toate următoarele obiecte și articolele lor asociate vor fi șterse:"
+
+msgid "Summary"
+msgstr "Sumar"
+
+msgid "Welcome back to"
+msgstr "Bine ați revenit la"
+
+msgid "You are authenticated as %(username)s, but are not authorized to access this page. Would you like to login to a different account?"
+msgstr "Sunteți autentificat ca %(username)s, dar nu aveți permisiunea de a accesa această pagină. Doriți să vă autentificați într-un alt cont?"
+
+msgid "Log in"
+msgstr "Autentificați-vă"
+
+msgid "Forgotten your password or username?"
+msgstr "Ați uitat parola sau numele de utilizator?"
+
+msgid "Return to site"
+msgstr "Întoarceți-vă la site"
+
+msgid "This object doesn’t have a change history. It probably wasn’t added via this admin site."
+msgstr "Acest obiect nu are un istoric de modificări. Probabil nu a fost adăugat prin acest site de administrare."
+
+msgid "Show all"
+msgstr "Arată tot"
+
+msgid "Type to search"
+msgstr "Scrieți pentru a căuta"
+
+msgid "Save and continue editing"
+msgstr "Salvați și continuați editarea"
+
+msgid "Save and view"
+msgstr "Salvați și vizualizați"
+
+msgid "Save and add another"
+msgstr "Salvați și adăugați altul"
+
+msgid "Save as new"
+msgstr "Salvați ca nou"
+
+msgid "You have been successfully logged out from the administration"
+msgstr "Ați fost deconectat cu succes din administrație"
+
+msgid "Thanks for spending some quality time with the web site today."
+msgstr "Mulțumim că ați petrecut timp de calitate pe site-ul nostru astăzi."
+
+msgid "Log in again"
+msgstr "Autentificați-vă din nou"
+
+msgid "Your password was changed."
+msgstr "Parola dumneavoastră a fost schimbată."
+
+msgid "Please enter your old password, for security’s sake, and then enter your new password twice so we can verify you typed it in correctly."
+msgstr "Vă rugăm să introduceți parola veche, din motive de securitate, și apoi să introduceți parola nouă de două ori pentru a o verifica."
+
+msgid "No data"
+msgstr "Nu există date"
+
+msgid "View site"
+msgstr "Vizualizați site-ul"
+
+msgid "Log out"
+msgstr "Deconectați-vă"
+
+msgid "More actions"
+msgstr "Mai multe acțiuni"
+
+msgid "All applications"
+msgstr "Toate aplicațiile"
+
+msgid "Add"
+msgstr "Adăugați"
+
+msgid "True"
+msgstr "Adevărat"
+
+msgid "False"
+msgstr "Fals"
+
+msgid "Apply Filters"
+msgstr "Aplicați filtrele"
+
+msgid "Hide counts"
+msgstr "Ascundeți numărul"
+
+msgid "Show counts"
+msgstr "Arătați numărul"
+
+msgid "Clear all filters"
+msgstr "Ștergeți toate filtrele"
+
+msgid "No, take me back"
+msgstr "Nu, întoarceți-mă"
+
+msgid "Yes, I’m sure"
+msgstr "Da, sunt sigur"
+
+msgid "Record picture"
+msgstr "Imagine înregistrare"
+
+msgid "Remove"
+msgstr "Îndepărtați"
+
+msgid "Delete?"
+msgstr "Ștergeți?"
+
+msgid "No results found"
+msgstr "Nu s-au găsit rezultate"
+
+msgid "This page yielded into no results. Create a new item or reset your filters."
+msgstr "Această pagină nu a dat rezultate. Creați un nou element sau resetați filtrele."
+
+msgid "Reset filters"
+msgstr "Resetați filtrele"
+
+msgid "Go back"
+msgstr "Întoarceți-vă"
+
+msgid "Recent actions"
+msgstr "Acțiuni recente"
+
+msgid "Unknown content"
+msgstr "Conținut necunoscut"
+
+msgid "Please correct the error below."
+msgstr "Vă rugăm să corectați eroarea de mai jos."
+
+msgid "Please correct the errors below."
+msgstr "Vă rugăm să corectați erorile de mai jos."
+
+msgid "Previous"
+msgstr "Precedent"
+
+msgid "Next"
+msgstr "Următor"
+
+msgid "Search apps and models..."
+msgstr "Căutați aplicații și modele..."
+
+msgid "Filter navigation items"
+msgstr "Filtrați elementele de navigare"
+
+msgid "Django administration"
+msgstr "Administrare Django"
+
+msgid "General"
+msgstr "General"
+
+msgid "Dark"
+msgstr "Întunecat"
+
+msgid "Light"
+msgstr "Lumină"
+
+msgid "System"
+msgstr "Sistem"
+
+msgid "%(counter)s result"
+msgid_plural "%(counter)s results"
+msgstr[0] "%(counter)s rezultat"
+msgstr[1] "%(counter)s rezultate"
+
+msgid "%(full_result_count)s total"
+msgstr "%(full_result_count)s total"
+
+msgid "Welcome,"
+msgstr "Bine ați venit,"
+
+msgid "Image preview"
+msgstr "Previzualizare imagine"
+
+msgid "Choose file to upload"
+msgstr "Alegeți fișierul de încărcat"
+
+msgid "Change selected %(model)s"
+msgstr "Schimbați selectatul %(model)s"
+
+msgid "Add another %(model)s"
+msgstr "Adăugați încă un %(model)s"
+
+msgid "View selected %(model)s"
+msgstr "Vizualizați selectatul %(model)s"
+
+msgid "Delete selected %(model)s"
+msgstr "Ștergeți selectatul %(model)s"
+
+msgid "Add row"
+msgstr "Adăugați rând"
+
+msgid "Select all objects on this page for an action"
+msgstr "Selectați toate obiectele de pe această pagină pentru o acțiune"
+
+msgid "Date"
+msgstr "Dată"
+
+msgid "Select currency"
+msgstr "Selectați moneda"
+
+#~ msgid "Name of the place."
+#~ msgstr "Numele locului"

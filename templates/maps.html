@@ -1,152 +1,117 @@
+{% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Map</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-   <link type="text/css" href="{% static 'main/css/maps.css' %}" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+{% load i18n %}
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
-</head>
+{% block css %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+<link type="text/css" href="{% static 'main/css/maps.css' %}" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"
+      integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
 <body>
+{% endblock%}
 
-    <header class="menu-bar">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-4 d-flex align-items-center gap-2">
-                <img class="logo" src="{% static 'main/images/logo.png' %}">
-                <h3 class="mb-0">ALLWAYS</h3>
-              </div>
-
-            <div class="col-xl-6">
-                <nav>
-                    <ul class="menu nav d-flex align-items-center justify-content-start gap-3">
-                        <li class="menu__item"><a>Home</a></li>
-                        <li class="menu__item"><a>Map</a></li>
-                        <li class="menu__item"><a>Static</a></li>
-                        <li class="menu__item"><a>Learn more</a></li>
-                    </ul>
-                </nav>
-            </div>
-          </div>
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-xl-12">
+            <select class="form-select" id="filter">
+                <option value=" ">{% trans "Choose" %}</option>
+                <option value="all">{% trans "All" %}</option>
+                <option value="restaurants">{% trans "Restaurants" %}</option>
+                <option value="hotels">{% trans "Hotels" %}</option>
+                <option value="entertainment">{% trans "Entertainment" %}</option>
+                <option value="pharmacies">{% trans "Pharmacies" %}</option>
+            </select>
+            <main class="container">
+                <div class="container" id="map"></div>
+            </main>
         </div>
-      </header>
-
-
-        <div class="container" >
-        <div class="row">
-
-<div class="col-xl-12">
- <select class="form-select"  id="filter">
-         <option value=" ">Chose</option>
-        <option value="all">All</option>
-        <option value="restaurants">restaurants</option>
-        <option value="hotels">hotels</option>
-        <option value="entertainment">entertainment</option>
-        <option value="pharmacies">pharmacies</option>
-
-      </select>
-    <main class="container"><div class="container" id="map"></div></main>
-            </div>
-
-        </div>
-
 
     </div>
+</div>
+{% endblock %}
 
-
+{% block javascript %}
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script>
+    let select = document.getElementById("filter");
+    select.addEventListener("change", markers);
 
+    var map = L.map('map').setView([47.0105, 28.8638], 13);
 
-let select = document.getElementById("filter");
-select.addEventListener("change", markers);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: 'OpenStreetMap contributors',
+      maxZoom: 20
+    }).addTo(map);
 
-var map = L.map('map').setView([47.0105, 28.8638], 13);
+    const restaurant_Icon = L.icon({
+      iconUrl: 'https://img.icons8.com/?size=100&id=HLc5UtMzkFym&format=png&color=000000',
+      iconSize: [40, 40],
+    });
+    const hotel_Icon = L.icon({
+      iconUrl: 'https://img.icons8.com/?size=100&id=5enflsXgdcwt&format=png&color=000000',
+      iconSize: [30, 30],
+    });
+    const pharmacies_Icon = L.icon({
+      iconUrl: 'https://img.icons8.com/?size=100&id=ncrIAbn4FM6q&format=png&color=000000',
+      iconSize: [40, 40],
+    });
+    const entertainments_Icon = L.icon({
+      iconUrl: 'https://img.icons8.com/?size=100&id=kxp7tDduaVtI&format=png&color=000000',
+      iconSize: [40, 40],
+    });
+    const places = {{ places|safe }};
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-attribution: 'OpenStreetMap contributors',
-  maxZoom: 20
-}).addTo(map);
+    function category(txt_category) {
+      let markers_m = [];
 
+      for (let i = 0; i < places.length; i++) {
+        if (places[i].category === txt_category) {
+          let icon;
 
-const restaurant_Icon = L.icon({
-  iconUrl: 'https://img.icons8.com/?size=100&id=HLc5UtMzkFym&format=png&color=000000',
-  iconSize: [40, 40],
-});
-const hotel_Icon = L.icon({
-  iconUrl: 'https://img.icons8.com/?size=100&id=5enflsXgdcwt&format=png&color=000000',
-  iconSize: [30, 30],
-});
-const pharmacies_Icon = L.icon({
-  iconUrl: 'https://img.icons8.com/?size=100&id=ncrIAbn4FM6q&format=png&color=000000',
-  iconSize: [40, 40],
-});
-const entertainments_Icon = L.icon({
-  iconUrl: 'https://img.icons8.com/?size=100&id=kxp7tDduaVtI&format=png&color=000000',
-  iconSize: [40, 40],
-});
-  const places = {{ places|safe }};
+          if (txt_category === "restaurants") icon = restaurant_Icon;
+          else if (txt_category === "hotels") icon = hotel_Icon;
+          else if (txt_category === "pharmacies") icon = pharmacies_Icon;
+          else if (txt_category === "entertainment") icon = entertainments_Icon;
 
+          let marker = L.marker([places[i].lat, places[i].lng], { icon: icon })
+            .bindTooltip(places[i].name, { permanent: false, direction: 'top' });
 
-function category(txt_category) {
-  let markers_m = [];
+          markers_m.push(marker);
+        }
+      }
 
-  for (let i = 0; i < places.length; i++) {
-    if (places[i].category === txt_category) {
-      let icon;
-
-      if (txt_category === "restaurants") icon = restaurant_Icon;
-      else if (txt_category === "hotels") icon = hotel_Icon;
-      else if (txt_category === "pharmacies") icon = pharmacies_Icon;
-      else if (txt_category === "entertainment") icon = entertainments_Icon;
-
-      let marker = L.marker([places[i].lat, places[i].lng], { icon: icon })
-        .bindTooltip(places[i].name, { permanent: false, direction: 'top' });
-
-      markers_m.push(marker);
+      return markers_m;
     }
-  }
 
-  return markers_m;
-}
-
-let layer = null;
-function markers() {
-  let value = select.value;
+    let layer = null;
+    function markers() {
+      let value = select.value;
 
 
-  if (layer !== null) {
-    map.removeLayer(layer);
-  }
-  if(value==="all")
-   {
-        let new_restaurants = category('restaurants');
-        let new_hotels =  category('hotels');
-        let new_pharmacies = category('pharmacies');
-        let new_entertainment = category('entertainment');
+      if (layer !== null) {
+        map.removeLayer(layer);
+      }
+      if(value==="all")
+       {
+            let new_restaurants = category('restaurants');
+            let new_hotels =  category('hotels');
+            let new_pharmacies = category('pharmacies');
+            let new_entertainment = category('entertainment');
 
-    let allMarkers = new_restaurants.concat(new_hotels, new_pharmacies, new_entertainment);
-
-
-    layer = L.layerGroup(allMarkers);
-    map.addLayer(layer);
-
-}else{
-  let newMarkers = category(value);
-  layer = L.layerGroup(newMarkers);
-  map.addLayer(layer);
-  }
-}
+        let allMarkers = new_restaurants.concat(new_hotels, new_pharmacies, new_entertainment);
 
 
+        layer = L.layerGroup(allMarkers);
+        map.addLayer(layer);
 
-
-
+    }else{
+      let newMarkers = category(value);
+      layer = L.layerGroup(newMarkers);
+      map.addLayer(layer);
+      }
+    }
 </script>
-
-</body>
-</html>
+{% endblock %}
