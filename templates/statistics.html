@@ -11,15 +11,28 @@
 {% endblock%}
 
 {% block content %}
-<div class="col-xl-10 inform">
-    <p>
-    <h2>{% trans "Primary Disability" %}</h2>
-    {% trans "The number of individuals recognized for the first time with a disability has increased compared to the previous year. According to data from the National Council for the Determination of Disability and Work Capacity, in 2023, 14.3 thousand people applied for evaluation. Of these, 12.9 thousand people (90.5%) were recognized with a primary disability, including 11.2 thousand adults (86.9%) and 1.6 thousand children (13.1%). The proportion of people with a primary disability was higher in rural areas, accounting for 63.3% in 2023." %}
-    </p>
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+            <div class="card shadow-lg inform">
+                <h2 class="card-title text-center">{% trans "Primary Disability" %}</h2> <!-- Spațiu mai mare sub titlu -->
+                <div class="card-body p-4">
+                    <p class="card-text text-justify">
+                        {% trans "The number of individuals recognized for the first time with a disability has increased compared to the previous year. According to data from the National Council for the Determination of Disability and Work Capacity, in 2023, 14.3 thousand people applied for evaluation. Of these, 12.9 thousand people (90.5%) were recognized with a primary disability, including 11.2 thousand adults (86.9%) and 1.6 thousand children (13.1%). The proportion of people with a primary disability was higher in rural areas, accounting for 63.3% in 2023." %}
+                    </p>
+                </div>
+            </div>
+        </div>
 
-</div>
-<div class="col-xl-10 static">
-    <canvas id="Chart_1"></canvas>
+        <!-- Cardul cu graficul -->
+        <div class="col-12 col-md-10 col-lg-8 mt-5"> <!-- Spațiu mare între cele 2 carduri -->
+            <div class="card shadow-lg">
+                <div class="card-body p-4">
+                    <canvas id="Chart_1" class="w-100"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}
 

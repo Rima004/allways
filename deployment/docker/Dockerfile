@@ -7,11 +7,8 @@ COPY poetry.lock .
 
 RUN pip install poetry && poetry install
 
-COPY apps .
-COPY config .
-COPY static .
-COPY templates .
-COPY manage.py .
-COPY db.sqlite3 .
+COPY . .
 
-CMD ["python", "manage.py", "runserver", "8001"]
+ENV DJANGO_SETTINGS_MODULE='config.settings'
+
+CMD ["poetry", "run", "python", "manage.py", "runserver", "0.0.0.0:8001"]

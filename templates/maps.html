@@ -13,23 +13,19 @@
 {% endblock%}
 
 {% block content %}
-<div class="container">
-    <div class="row">
-        <div class="col-xl-12">
-            <select class="form-select" id="filter">
-                <option value=" ">{% trans "Choose" %}</option>
-                <option value="all">{% trans "All" %}</option>
-                <option value="restaurants">{% trans "Restaurants" %}</option>
-                <option value="hotels">{% trans "Hotels" %}</option>
-                <option value="entertainment">{% trans "Entertainment" %}</option>
-                <option value="pharmacies">{% trans "Pharmacies" %}</option>
-            </select>
-            <main class="container">
-                <div class="container" id="map"></div>
-            </main>
-        </div>
-
+<div id="map-wrapper">
+    <div id="interaction-panel" class="interaction-panel">
+        <select class="form-select" id="filter">
+            <option value=" ">{% trans "Choose" %}</option>
+            <option value="all">{% trans "All" %}</option>
+            <option value="restaurants">{% trans "Restaurants" %}</option>
+            <option value="hotels">{% trans "Hotels" %}</option>
+            <option value="entertainment">{% trans "Entertainment" %}</option>
+            <option value="pharmacies">{% trans "Pharmacies" %}</option>
+        </select>
     </div>
+
+    <div id="map"></div>
 </div>
 {% endblock %}
 
