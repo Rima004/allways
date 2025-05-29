@@ -81,7 +81,6 @@ LANGUAGE_CODE = "en-us"
 LANGUAGES = [
     ("en", _("English")),
     ("ro", _("Romanian")),
-    ("ru", _("Russian")),
 ]
 
 TIME_ZONE = "UTC"

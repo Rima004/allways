@@ -19,9 +19,10 @@
             <option value=" ">{% trans "Choose" %}</option>
             <option value="all">{% trans "All" %}</option>
             <option value="restaurants">{% trans "Restaurants" %}</option>
-            <option value="hotels">{% trans "Hotels" %}</option>
+            <option value="companies">{% trans "Сompanies" %}</option>
             <option value="entertainment">{% trans "Entertainment" %}</option>
             <option value="pharmacies">{% trans "Pharmacies" %}</option>
+             <option value="organizations">{% trans "Оrganizations" %}</option>
         </select>
     </div>
 
@@ -46,9 +47,9 @@
       iconUrl: 'https://img.icons8.com/?size=100&id=HLc5UtMzkFym&format=png&color=000000',
       iconSize: [40, 40],
     });
-    const hotel_Icon = L.icon({
-      iconUrl: 'https://img.icons8.com/?size=100&id=5enflsXgdcwt&format=png&color=000000',
-      iconSize: [30, 30],
+    const companies_Icon = L.icon({
+      iconUrl: 'https://img.icons8.com/?size=100&id=20497&format=png&color=000000',
+      iconSize: [40, 40],
     });
     const pharmacies_Icon = L.icon({
       iconUrl: 'https://img.icons8.com/?size=100&id=ncrIAbn4FM6q&format=png&color=000000',
@@ -58,6 +59,11 @@
       iconUrl: 'https://img.icons8.com/?size=100&id=kxp7tDduaVtI&format=png&color=000000',
       iconSize: [40, 40],
     });
+      const  organizations_Icon = L.icon({
+      iconUrl: 'https://img.icons8.com/?size=100&id=64459&format=png&color=000000',
+      iconSize: [40, 40],
+    });
+
     const places = {{ places|safe }};
 
     function category(txt_category) {
@@ -68,10 +74,10 @@
           let icon;
 
           if (txt_category === "restaurants") icon = restaurant_Icon;
-          else if (txt_category === "hotels") icon = hotel_Icon;
+          else if (txt_category === "companies") icon = companies_Icon;
           else if (txt_category === "pharmacies") icon = pharmacies_Icon;
           else if (txt_category === "entertainment") icon = entertainments_Icon;
-
+           else if (txt_category === "organizations") icon = organizations_Icon;
           let marker = L.marker([places[i].lat, places[i].lng], { icon: icon })
             .bindTooltip(places[i].name, { permanent: false, direction: 'top' });
 
@@ -93,11 +99,12 @@
       if(value==="all")
        {
             let new_restaurants = category('restaurants');
-            let new_hotels =  category('hotels');
+            let new_companies =  category('companies');
             let new_pharmacies = category('pharmacies');
             let new_entertainment = category('entertainment');
+            let new_organizations = category('organizations');
 
-        let allMarkers = new_restaurants.concat(new_hotels, new_pharmacies, new_entertainment);
+        let allMarkers = new_restaurants.concat(new_companies, new_pharmacies, new_entertainment,new_organizations);
 
 
         layer = L.layerGroup(allMarkers);

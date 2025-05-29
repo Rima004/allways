@@ -9,11 +9,15 @@
 {% endblock%}
 
 {% block content %}
-<main class="container mt-4">
+<main class="vh-100 w-100 m-0" style="background-image: url({% static 'main/images/happy.jpg' %});
+ background-size: cover;
+
+">
+
     <div class="slider container">
-        <div><img src="{% static 'main/images/nature.jpeg' %}"></div>
-        <div><img src="{% static 'main/images/nature.jpeg' %}"></div>
-        <div><img src="{% static 'main/images/nature.jpeg' %}"></div>
+        <div><video controls="controls"><source src="{% static 'main/images/video_1.MOV' %}"></video></div>
+        <div><video controls="controls"><source src="{% static 'main/images/video_2.MOV' %}"></video></div>
+
     </div>
 
 

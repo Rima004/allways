@@ -20,6 +20,9 @@ def statistics_view(request):
     statist = list(Statistics.objects.values())
     return render(request, "statistics.html", {"statistics": json.dumps(statist)})
 
+def donate_view(request):
+
+        return render(request, "donate.html")
 
 class MainView(TemplateView):
     template_name = "main.html"
@@ -45,3 +48,9 @@ class StatisticsView(ListView):
         context = super().get_context_data(**kwargs)
         context["statistics"] = list(self.get_queryset().values())
         return context
+
+
+
+
+
+
